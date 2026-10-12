@@ -57,7 +57,7 @@ static void mode_to_string(mode_t m,char*b){
     b[7]=(m&S_IROTH)?'r':'-'; b[8]=(m&S_IWOTH)?'w':'-'; b[9]=(m&S_IXOTH)?'x':'-';
     if(m&S_ISUID)b[3]=(b[3]=='x')?'s':'S';
     if(m&S_ISGID)b[6]=(b[6]=='x')?'s':'S';
-    if(m&S_ISVTX)b[9]=(b[9]=='x')?'t':'T';
+    if(m&01000)b[9]=(b[9]=='x')?'t':'T';
     b[10]='\0';
 }
 static int is_archive(const char*n){
