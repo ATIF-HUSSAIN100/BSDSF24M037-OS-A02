@@ -1,6 +1,6 @@
 /* v1.5.0 - colorized output by file type */
 
-
+/* v1.6.0 - recursive listing (-R) */
 #define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
